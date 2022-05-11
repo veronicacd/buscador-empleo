@@ -16,6 +16,4 @@ Mariela Robertiello- Maru10H;
 
 Marite Bravo - maritebr;
 
-Micaela Ferrarese - micaelaFerrarese;
-
 Veronica Cardozo - veronicacd;
