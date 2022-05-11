@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.guardarProp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  font-family: "Poppins", sans-serif;
+}
+
+.jobSearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 330px;
+  height: 260px;
+}
+
+.box-proposalJobs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 1020px;
+}
+
+.addProposal {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-bottom: 50px;
+  width: 320px;
+  height: 160px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #147A7A;
+  color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 3px 0 0 #a5a0a0;
+}
+
+.sub-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  color: #24CCCC;
+}
+
+.searh {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*@import 'vendors/bootstrap';
+@import 'vendors/jquery-ui';*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search {
+  background-color: #FFFFFF;
+  color: #0000;
+  border: 20px solid #24CCCC;
+  width: 1000px;
+  border-radius: 40px;
+}
+
+.input-search {
+  border: none;
+  border-radius: 25px;
+  padding-left: 30px;
+  width: 500px;
+  outline-color: white;
+}
+
+.lupa {
+  color: #24CCCC;
+  position: absolute;
+  padding: 5px;
+}
+
+@media (max-width: 1100px) {
+  .search {
+    width: 800px;
+  }
+}
+@media (max-width: 1000px) {
+  .header {
+    width: 1000px;
+    align-items: center;
+  }
+
+  .search {
+    width: 600px;
+    justify-content: center;
+  }
+}
+@media (max-width: 320px) {
+  .search {
+    width: 320px;
+  }
+}
+button {
+  font-size: 0.8em;
+  font-family: "Poppins", sans-serif;
+  background-color: #24CCCC;
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+  border: none;
+}
+
+.btn-save {
+  margin: 5px;
+  width: 30%;
+  padding: 5px;
+}
+
+#btn-save-edit, #bnt-delete {
+  width: 17%;
+  margin-top: 10px;
+}
+
+.addProposal p {
+  font-size: 0.8em;
+}
+
+.proposal,
+.header-proposal h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 3px;
+}
+
+.subtitle,
+.header-proposal h3 {
+  font-size: 1em;
+  margin: 3px;
+}
+
+.jobSearch {
+  background-color: #147A7A;
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+.input-proposal {
+  border-radius: 20px;
+  font-size: 1em;
+  padding: 5px;
+  padding-left: 10px;
+  border: none;
+}
+
+.icons i {
+  margin-left: 15px;
+}
+
+.modal-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.65);
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #147A7A;
+  color: white;
+  border-radius: 20px;
+  width: 400px;
+  padding: 15px;
+  height: 300px;
+  opacity: 1;
+}
+
+.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn:hover {
+  transition: 0.2s all;
+  opacity: 0.7;
+}
+
+@media (max-width: 1100px) {
+  .box-proposalJobs {
+    width: 660px;
+  }
+}
+@media (max-width: 320px) {
+  .box-proposalJobs {
+    width: 330px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

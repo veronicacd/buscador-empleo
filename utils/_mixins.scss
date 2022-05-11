@@ -1,0 +1,76 @@
+@mixin flexboxDiv ($dis, $direccion, $align, $just) {
+    display: $dis;
+    flex-direction: $direccion;
+    align-items: $align;
+    justify-content: $just;
+    font-family: $fuente;
+}
+
+.container-home{
+    @include flexboxDiv (flex, column, center, center);
+    width: 1020px;
+    margin: 0 auto;   
+}
+
+.header{
+    @include flexboxDiv (flex, column, center, center);
+    padding:20px;
+    margin-bottom: 10px;
+}
+
+.guardarProp{
+    @include flexboxDiv (flex, row, center, end);
+}
+
+@mixin flexboxCards ($display, $direccion, $just, $wrap){
+    display: $display;
+    flex-direction: $direccion;
+    justify-content: $just;
+    flex-wrap: $wrap;
+}
+
+.jobSearch{
+    @include flexboxCards (flex, column, center, nowrap);
+    width: 330px;
+    height: 260px;    
+}
+
+.box-proposalJobs{
+    @include flexboxCards (flex, row, space-around , wrap);
+    width: 1020px;    
+      
+}
+
+@mixin flexboxProposals ($display, $just, $direccion){
+    display: $display;
+    justify-content: $just;
+    flex-direction: $direccion;
+}
+
+.addProposal{
+    @include flexboxProposals (flex, space-around, column);
+    padding-bottom: 50px;
+    width: 320px;
+    height: 160px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: $color-cards;
+    color: $color-textoCards;
+    border-radius: 20px; 
+    box-shadow: 0 3px 0 0 rgb(165, 160, 160);       
+}
+
+.sub-header{
+    @include flexboxProposals (flex, space-between, row);
+}
+
+.icons{
+    @include flexboxProposals (flex, flex-end, row);
+    color: $color-buscador;
+}
+
+.searh {
+    @include flexboxProposals (flex, center, row);
+    align-items: center;
+}
+

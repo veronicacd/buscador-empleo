@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Buscador de empleo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <!--iconos font-awesome-->
+        <script src="https://kit.fontawesome.com/496cbad095.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--TITULO DE PAGINA-->
+        <div class="header">
+
+            <div class="search" id="search">
+                <i class="fa-solid fa-magnifying-glass lupa"></i>
+                <input type="text" class="input-search" placeholder="Puesto 1" value="" id="input-search">
+            </div>
+
+        </div>
+
+    <div class="container-home">
+     
+        <!--PROPUESTA DE EMPLEO-->
+        <div class="jobSearch" id="jobSearch">
+
+            <h2 class="proposal">Agregar Propuesta</h2>
+
+            <h3 class="subtitle">Puesto</h3>
+            <input type="text" class="input-proposal" id="puesto">
+            <h3 class="subtitle">Empresa</h3>
+            <input type="text" class="input-proposal" id="empresa">
+            <h3 class="subtitle">Tags</h3>
+            <input type="text" class="input-proposal" id="tags">
+            <div class="guardarProp">
+                <button class="btn-save" id="btn-save">Guardar</button>
+            </div>
+        </div>
+
+        <!--PROPUESTA AGREGADA 1-->
+        <section class="box-proposalJobs" id="box-proposalJobs"> 
+            <div class="addProposal" id="addProposal">
+            </div>
+        </section>
+    </div>    
+            <!--MODAL EDITAR-->
+    <div class="modal-bg" id="bgModal-edit">     
+        <div class="modal" id="modal-edit">
+            <span id="close-editar" class="close">
+                <i class="far fa-times-circle"></i>
+            </span>
+            <h2 class="editProposal">Editar Propuesta</h2>
+            <input type="hidden" id="idEditar">
+            <h3 class="subtitle">Puesto</h3>
+            <input type="text" class="input_editPuesto" id="input_editPuesto">
+            <h3 class="subtitle">Empresa</h3>
+            <input type="text"  class="input_editEmpresa" id="input_editEmpresa">
+            <h3 class="subtitle">Tags</h3>
+            <input type="text"  class="input_editTag" id="input_editTag">
+            
+            <button class="btn" id="btn-save-edit">Guardar</button>
+
+        </div>
+    </div>    
+
+     <!--MODAL ELIMINAR-->
+    <div class="modal-bg" id="bgModal-delete">          
+        <div class="modal" id="modal-delete">
+            <span id="close-eliminar" class="close">
+                <i class="far fa-times-circle"></i>
+            </span>
+            <input type="hidden" id="idEliminar">
+            <p>¿Desea eliminar esta oferta de trabajo?</p>
+            <button class="btn" id="bnt-delete">Eliminar</button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
